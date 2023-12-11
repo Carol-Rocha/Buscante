@@ -1,27 +1,69 @@
-# Buscante
+# Projeto Buscando: Aplicação Front-End para Busca de Livros
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+Este repositório contém o código-fonte da aplicação front-end "Buscando", desenvolvida em Angular. A aplicação permite aos usuários buscar livros com base em critérios como nome, autor, editora ou descrição, utilizando a API do Google Books para recuperar os dados dos livros.
 
-## Development server
+## Instruções de Uso:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Pré-requisitos:
 
-## Code scaffolding
+Certifique-se de ter as seguintes ferramentas instaladas:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js: [Download](https://nodejs.org/) v16.14.2.
+- Angular CLI: `npm install -g @angular/cli` v14.0.3.
 
-## Build
+### Passos para Execução:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/buscando.git
+   cd buscando
 
-## Running unit tests
+2. **Instale as Dependências:**
+   ```bash
+   npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Execute a Aplicação:**
+   ```bash
+   ng serve
 
-## Running end-to-end tests
+  Acesse a aplicação em http://localhost:4200/.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+ ## Funcionalidades Principais:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Pesquisa por Livro:
+
+Utilize a barra de pesquisa para inserir o nome do livro, autor, editora ou descrição.
+
+![bucanteDesktop](https://github.com/Carol-Rocha/Buscante/assets/114522368/ed2fca46-3c68-47a6-9047-ed1950354903)
+
+### Listagem de Resultados:
+
+Os resultados da pesquisa são exibidos de forma organizada, mostrando informações relevantes sobre os livros.
+
+![buscandoMobile](https://github.com/Carol-Rocha/Buscante/assets/114522368/f70af0df-16ab-4836-897d-b48a46bd7ff1)
+
+### Detalhar:
+
+Utilize o botão "mais detalhes" para visualizar mais informações sobre o livro desejado.
+
+![buscanteMaisDetalhes](https://github.com/Carol-Rocha/Buscante/assets/114522368/f8329c31-1350-42c8-b157-a83eed2f4442)
+
+### Ler prévia:
+
+Utiize o botão "Ler prévia" para ser redirecionado para a página de prévia do livro.
+
+## Tecnologias Utilizadas:
+
+- **Angular:** Estrutura de desenvolvimento front-end.
+- **Google Books API:** Fonte de dados para informações sobre os livros.
+
+## Contribuições e Melhorias:
+
+Contribuições são bem-vindas! Se tiver sugestões ou correções, abra uma [issue](https://github.com/seu-usuario/buscando/issues) ou envie um [pull request](https://github.com/seu-usuario/buscando/pulls).
+
+
+
+
+
+
