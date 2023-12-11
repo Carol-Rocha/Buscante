@@ -15,8 +15,8 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 1. **Clone o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/buscando.git
-   cd buscando
+   git clone https://github.com/carol-rocha/buscante.git
+   cd buscante
 
 2. **Instale as Dependências:**
    ```bash
