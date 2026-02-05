@@ -1,66 +1,81 @@
-# Projeto Buscando: Aplicação Front-End para Busca de Livros
+# Buscante
 
-Este repositório contém o código-fonte da aplicação front-end "Buscando", desenvolvida em Angular. A aplicação permite aos usuários buscar livros com base em critérios como nome, autor, editora ou descrição, utilizando a API do Google Books para recuperar os dados dos livros.
+Buscante é uma aplicação web Angular que permite buscar livros utilizando a API pública do Google Books. O projeto foi desenvolvido para facilitar a pesquisa de títulos, autores e informações de livros de forma rápida e intuitiva.
 
-## Instruções de Uso:
+## Link do Deploy
 
-### Pré-requisitos:
+Acesse a aplicação online:  
+https://buscante-nu.vercel.app/lista-livros
 
-Certifique-se de ter as seguintes ferramentas instaladas:
+## Funcionalidades
 
-- Node.js: [Download](https://nodejs.org/) v16.14.2.
-- Angular CLI: `npm install -g @angular/cli` v14.0.3.
+- Busca de livros por título, autor ou palavra-chave.
+- Exibição de resultados com detalhes dos livros.
+- Interface responsiva e moderna.
 
-### Passos para Execução:
+## Tecnologias Utilizadas
 
-1. **Clone o Repositório:**
+- Angular 14
+- TypeScript
+- RxJS
+- Google Books API
+
+## Como baixar e rodar localmente
+
+1. Clone o repositório:
    ```bash
-   git clone https://github.com/carol-rocha/buscante.git
-   cd buscante
+   git clone <URL_DO_SEU_REPOSITORIO>
+   cd Buscante
+   ```
 
-2. **Instale as Dependências:**
+2. Instale as dependências:
    ```bash
    npm install
+   ```
 
-3. **Execute a Aplicação:**
+3. Rode a aplicação:
    ```bash
-   ng serve
+   npm start
+   ```
+   Acesse em `http://localhost:4200/lista-livros`
 
-  Acesse a aplicação em http://localhost:4200/.
+## Rotas
 
+A aplicação possui as seguintes rotas:
 
- ## Funcionalidades Principais:
+- `/lista-livros`: Página principal onde é possível buscar e visualizar livros.
 
-### Pesquisa por Livro:
+A rota padrão redireciona para `/lista-livros`.
 
-Utilize a barra de pesquisa para inserir o nome do livro, autor, editora ou descrição.
+## API Utilizada
 
-![bucanteDesktop](https://github.com/Carol-Rocha/Buscante/assets/114522368/ed2fca46-3c68-47a6-9047-ed1950354903)
+A busca de livros é feita através da API pública do Google Books:
+```
+https://www.googleapis.com/books/v1/volumes
+```
+O serviço consome esta API enviando o termo digitado pelo usuário como parâmetro `q`.
 
-### Listagem de Resultados:
+## Estrutura do Projeto
 
-Os resultados da pesquisa são exibidos de forma organizada, mostrando informações relevantes sobre os livros.
+- `src/app/componentes/`: Componentes reutilizáveis (cabeçalho, rodapé, livro).
+- `src/app/views/`: Telas principais (lista de livros, modal de detalhes).
+- `src/app/service/livro.service.ts`: Serviço responsável pela comunicação com a API do Google Books.
+- `src/app/models/`: Interfaces e tipos utilizados.
+- `src/app/pipes/`: Pipes personalizados.
+- `src/app/app-routing.module.ts`: Configuração das rotas.
 
-![buscandoMobile](https://github.com/Carol-Rocha/Buscante/assets/114522368/f70af0df-16ab-4836-897d-b48a46bd7ff1)
+## Como contribuir
 
-### Detalhar:
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature ou correção:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Faça suas alterações e envie um pull request.
 
-Utilize o botão "mais detalhes" para visualizar mais informações sobre o livro desejado.
+## Licença
 
-![buscanteMaisDetalhes](https://github.com/Carol-Rocha/Buscante/assets/114522368/f8329c31-1350-42c8-b157-a83eed2f4442)
-
-### Ler prévia:
-
-Utiize o botão "Ler prévia" para ser redirecionado para a página de prévia do livro.
-
-## Tecnologias Utilizadas:
-
-- **Angular:** Estrutura de desenvolvimento front-end.
-- **Google Books API:** Fonte de dados para informações sobre os livros.
-
-## Contribuições e Melhorias:
-
-Contribuições são bem-vindas! Se tiver sugestões ou correções, abra uma [issue](https://github.com/seu-usuario/buscando/issues) ou envie um [pull request](https://github.com/seu-usuario/buscando/pulls).
+Este projeto está sob a licença MIT.
 
 
 
